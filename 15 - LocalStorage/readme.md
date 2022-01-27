@@ -2,7 +2,7 @@
 
 ## for adding the option to checkALl or Uncheck all. I used a foreach on the items object
 
-` function checkAll() {
+```function checkAll() {
 let isDone = true ;
 if(sellectAllBtn.innerText ==="unSelect all") {
 sellectAllBtn.innerText = "Select all"
@@ -18,4 +18,4 @@ plate.done = isDone ;
 
 }
 
-`
+```
