@@ -23,7 +23,7 @@
       <input type="text" name="item" placeholder="Item Name" required>
       <input type="submit" value="+ Add Item">
     </form>
-    <button id="selectAllBtn" > Select all </button>
+    <button id="selectAllBtn" >Select all</button>
   </div>
 
 <script>
@@ -81,8 +81,16 @@ function updateList() {
 }
 
 function checkAll() {
+    let isDone = true ; 
+   if(sellectAllBtn.innerText ==="unSelect all") {
+       sellectAllBtn.innerText = "Select all"
+       isDone = false ;
+   }else {
+    sellectAllBtn.innerText = "unSelect all"
+     }
+           
      items.forEach( plate => {
-            plate.done = true ;
+            plate.done = isDone ;
              
             }); 
     
